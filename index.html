@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<style>
+   .container {
+    padding-top: 10px;
+    }
+   #display {
+    font-size: 2em;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .number {
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 1px 1px 5px #ccc;
+  }
+
+  .number:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+
+  #add, #subtract, #multiply, #divide {
+    background-color: #1033a7;
+    color: #fff;
+  }
+
+  #add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+    background-color: #4446ee;
+  }
+
+  button:active {
+    box-shadow: inset 1px 1px 5px #ccc;
+  }
+  #display{
+    width: 250px;
+    height: 100px;
+  }
+ 
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="col-sm-4 col-md-3 col-lg-2">
+            <input type="text" id="display" class="">
+        </div>
+        <br>
+    <div>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="7">7</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="8">8</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="9">9</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="add">+</button><br>
+
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="6">6</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="5">5</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="4">4</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="subtract">-</button><br>
+
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="3">3</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="2">2</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="1">1</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="multiply">*</button><br>  
+
+        <button type="button" onclick="clicking(this)"class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="0">0</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2"id="clear">C</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="equal">=</button>
+        <button type="button" onclick="clicking(this)" class="btn btn-secondary number col-sm-4 col-md-3 col-lg-2" id="divide">/</button>
+
+    </div>    
+    
+</div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</html>
